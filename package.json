@@ -1,0 +1,47 @@
+{
+  "name": "k8s-watch-rx",
+  "version": "0.3.0",
+  "description": "Simple Observable wrapper for kubernetes-client k8s.watch",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schaze/node-k8s-watch-rx.git"
+  },
+  "homepage": "https://github.com/schaze/node-k8s-watch-rx#README.md",
+  "files": [
+    "*"
+  ],
+  "keywords": [
+    "kuberntes",
+    "watch",
+    "rxjs"
+  ],
+  "author": {
+    "name": "schaze",
+    "email": "schazet@gmail.com"
+  },
+  "publishConfig": {
+    "registry": "https://npm.local.schaz.org"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/node": "^14.14.20",
+    "gulp": "^4.0.2",
+    "gulp-json-editor": "^2.5.2",
+    "gulp-run": "^1.7.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "tslint": "^5.18.0",
+    "typescript": "^4.4.0",
+    "merge2": "^1.4.1"
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^0.14.0",
+    "rxjs": "^7.4.0",
+    "winston": "^3.3.3"
+  }
+}
