@@ -16,7 +16,7 @@ export interface KubeWatchEvent<T> {
  * 
  * @param resource Name of the resouce e.g. /api/v1/watch/namespaces/<myNamespace>/configmaps/<myConfigmap>
  * @param kubeConfig Optional kubeConfig options (not implemented yet)
- * @returns Observable<KubeWatchEvent> emitting events ob changes of resource
+ * @returns Observable<KubeWatchEvent> emitting events on changes of resource
  */
 export function watchKubeResourceRx<T>(resource: string, kubeConfig: any = {}): Observable<KubeWatchEvent<T>> {
     return new Observable<KubeWatchEvent<T>>((observer) => {
